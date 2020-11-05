@@ -1,114 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Zen Garden: The Beauty of CSS Design</title>
+        <link rel="stylesheet" media="screen" href="styleprojekt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samir Ernez">
+        <meta name="description" content="Description here">
+        <meta name="robots" content="all">
+    </head>
 
-    <link rel="stylesheet" media="screen" href="styleprojekt.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <div class="wrapper">
+            <section class="head">
+                <div id="logo"></div>
+                <img src="https://img.favpng.com/4/9/3/coffee-cafe-logo-png-favpng-cQpm34YCF9xPuMMNYxHK4VCyA.jpg" width="140" height="140" alt="Company logo">
+                <header>
+                    <h1>Purple Coffee Café</h1>
+                    <q>Success is a journey not a destination.</q>
+                </header>
+            </section> 
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Samir Ernez">
-	<meta name="description" content="Description here">
-	<meta name="robots" content="all">
-
-</head>
-
-<body>
-    <div class="wrapper">
-
-        <section class="head">
-            <div id="logo"></div>
-            <img src="https://img.favpng.com/4/9/3/coffee-cafe-logo-png-favpng-cQpm34YCF9xPuMMNYxHK4VCyA.jpg" width="140px" height="140px">
-            <header role="banner">
-                
-                <h1>Purple Coffee Café</h1>
-                <q>Success is a journey not a destination.</q>
-            </header>
-
-          
-
-        </section>       
-        <div class="menu">
-            
-            <a href="om-oss.html" class="active">Om oss</a>
-
-            <div id="lankar">
-                <a href="index.html">Start</a>
-                <a href="nyheter.html">Nyheter</a>
-                <a href="vara-bonor.html">Våra ekologiska bönor</a> 
-                <a href="jobba.html">Jobba hos oss</a>
-                <a href="meny.html">Vår meny</a> 
-                <a href="hitta-oss.html">Var hittar du oss</a> 			
+            <div class="menu">
+                <a href="om-oss.html" class="active">Om oss</a>
+                <div id="lankar">
+                    <a href="index.html">Start</a>
+                    <a href="nyheter.html">Nyheter</a>
+                    <a href="vara-bonor.html">Våra ekologiska bönor</a> 
+                    <a href="jobba.html">Jobba hos oss</a>
+                    <a href="meny.html">Vår meny</a> 
+                    <a href="hitta-oss.html">Var hittar du oss</a> 			
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+
+            <div class="main">
+                <div class="omoss">
+                    <div class="portrattbilder">
+                        <img src="ansikte1.png" alt="Portrait of Lisa Larsson CEO of Company">
+                        <h3>Lisa Larsson - VD Purple Coffee</h3>
+                    </div>
+                    
+                    <div class="portrattbilder">
+                        <img src="ansikte2.png" alt="Portrait of Moa Fiktivsson CEO of Company">
+                        <h3>Moa Fiktivsson - VD Purple Coffee</h3>
+                    </div>
+                    
+                    <div class="portrattbilder">
+                        <img src="ansikte3.png" alt="Portrait of Lars Lisasson Head of Marketing">
+                        <h3>Lars Lisasson - Marknadsansvarig</h3>
+                    </div>
+                    
+                    <p id="om-oss-text">
+                        Purple Coffee är ett företag som startades år 2012 av tre vänner som drömde om att göra cafémiljö till något
+                        mer än bara platsen där dem träffas för att hänga. Valet blev därför att driva eget kafé, och nu 8år senare
+                        är vi ägare för hela 3 kaféer vi kan hänga på. Precis som er som söker sig till oss så är vi alla storälskare
+                        av kaffebönan, och väljer därför ut bönorna vi säljer med stor omsorg. I vårt koncept ingår också att behandla 
+                        bönderna inblandade i odlingen rättvist så att vi som företag bidrar till en bättre värld för alla med jättegott kaffe:).
+                    </p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footlinks">
+                    <a class="icons-foot" href="http://twitter.com" title="Twitter">
+                        <img src="twitter.png" alt="Twitter logo link">
+                    </a>
+                    <a class="icons-foot" href="http://facebook.com" title="Facebook">
+                        <img src="fb.png" alt="Facebook logo link">
+                    </a>
+                    <a class="icons-foot" href="http://instagram.com" title="Instagram">
+                        <img src="insta.png" alt="Instagram logo link">
+                    </a>
+                </div>
+                <p>Företag AB</p>
+                <p>Företagsgatan 21</p>
+                <p>352 44, Växjö</p>
+                <p>Öppettider: Mån-Fre 12-20, Lör-Sön 12-18</p> 
+            </footer>
         </div>
 
-        <div class="main">
-
-            <div class="omoss">
-
-                <div class="portrattbilder">
-                    <img src="ansikte1.png">
-                    <h3>Lisa Larsson - VD Purple Coffee</h3>
- 
-                </div>
-                
-
-                <div class="portrattbilder">
-                    <img src="ansikte2.png">
-                    <h3>Moa Fiktivsson - VD Purple Coffee</h3>
-
-                </div>
-                
-
-                <div class="portrattbilder">
-                    <img src="ansikte3.png">
-                    <h3>Lars Lisasson - Marknadsansvarig</h3>
-
-                </div>
-                
-                <p id="om-oss-text">
-                    Purple Coffee är ett företag som startades år 2012 av tre vänner som drömde om att göra cafémiljö till något
-                    mer än bara platsen där dem träffas för att hänga. Valet blev därför att driva eget kafé, och nu 8år senare
-                    är vi ägare för hela 3 kaféer vi kan hänga på. Precis som er som söker sig till oss så är vi alla storälskare
-                    av kaffebönan, och väljer därför ut bönorna vi säljer med stor omsorg. I vårt koncept ingår också att behandla 
-                    bönderna inblandade i odlingen rättvist så att vi som företag bidrar till en bättre värld för alla med jättegott kaffe:).
-                </p>
-            </div>
-          
-        </div>
-        <footer>
-            <ul>
-              <a class="icons-foot" href="http://twitter.com" title="Twitter">
-                  <img src="twitter.png">
-              </a>
-              <a class="icons-foot" href="http://facebook.com" title="Facebook">
-                  <img src="fb.png">
-              </a>
-              <a class="icons-foot" href="http://instagram.com" title="Instagram">
-                  <img src="insta.png">
-              </a>
-             </ul>
-              <p>Företag AB</p>
-              <p>Företagsgatan 21</p>
-              <p>352 44, Växjö</p>
-              <p>Öppettider: Mån-Fre 12-20, Lör-Sön 12-18</p>
-              
-          </footer>
-    </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("lankar");
-            if (x.style.display === "block") {
-            x.style.display = "none";
-            } else {
-            x.style.display = "block";
-            }
-        } 
-    
-    </script>
-</body>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("lankar");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            } 
+        </script>
+    </body>
+</html>

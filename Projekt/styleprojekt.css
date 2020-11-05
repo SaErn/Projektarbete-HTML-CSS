@@ -1,13 +1,11 @@
 *{
     box-sizing: border-box;
-    
 }
 
 html{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    background-color: #2D4159;
     float: left;
 }
 
@@ -16,7 +14,6 @@ body{
     padding: 0;
     max-width: 100%;
     display: block;
-    background-color: blue;
     overflow-x: hidden;
 }
 
@@ -24,12 +21,12 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    background-color: #9dc1ec;
     margin:0px;
     display: block;
     clear: both;
 }
 
+/* Head och navbar */
 .head{
     background: -moz-linear-gradient(left ,rgb(41, 17, 31) 70%, rgb(63, 15, 43) 30%);   
     max-width: 100%;
@@ -47,7 +44,6 @@ body{
 header{
     display: flex;
     flex-basis: 100%;
-
     flex-direction: column;
 }
 
@@ -57,7 +53,6 @@ header{
     font-variant: small-caps;
     color: white;
     text-shadow:1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
-
 }
 
 .head h1{
@@ -70,18 +65,6 @@ header{
     margin-left: 22px;
 }
 
-.description{
-    background: -moz-radial-gradient(#895061 10%,#59253A 90%);
-    border-top: 1px solid rgba(144, 28, 75, 0.3);
-    border-bottom: 1px solid rgba(144, 28, 75, 0.3);
-
-}
-
-.description p{
-    margin-left: 40px;
-    color: white;
-}
-
 .menu{
     background: -moz-linear-gradient(left ,rgb(41, 17, 31) 70%, rgb(63, 15, 43) 30%);
     position: sticky;
@@ -91,7 +74,6 @@ header{
     overflow: hidden;
     z-index: 1;
     border-bottom: 1px solid rgba(144, 28, 75, 0.3);
-    
 }
 
 .menu div{
@@ -123,22 +105,22 @@ header{
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
 
 .menu a:hover {
     background-color: #ddd;
     color: black;
     text-shadow: none;
-  }
+}
   
-
 .menu a.active {
     background-color: #4CAF50;
     color: white;
-  }
+}
+/* Slut Head Nav */
 
-  /* Main div för varje sida*/
 
+/* Main div för alla sidor*/
 .main{
     background: -moz-radial-gradient(#895061 10%,#59253A 90%);
     max-width: 100%;
@@ -159,7 +141,7 @@ header{
 .smallermain{
     background: -moz-radial-gradient(#895061 10%,#59253A 90%);
     max-width: 100%;
-    height: 600px;
+    height: 900px;
     padding: 30px;
     display: block;
     justify-content: center;
@@ -174,6 +156,8 @@ header{
 }
 /* SLUT Main div */
 
+
+/* Specifika för Start */
 .article div a{
     font-size: 20px;
     border:0;
@@ -195,7 +179,6 @@ header{
     text-decoration: none;
     text-shadow:1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
     font-size: 17px;
-
 }
 
 .pic-links p{
@@ -217,7 +200,6 @@ header{
 .article div:hover{
     border: 13px rgba(250, 250, 250, 0.6) dotted;
 }
-
 
 .article div .box-sizer{
     border:none;
@@ -293,18 +275,21 @@ header{
     align-items: center;
     flex-direction: column;
 }
+/* Slut Start */
 
+/*  Footer */
 footer{
+    background: #f2f5f6;
     background: -moz-linear-gradient(left ,rgb(41, 17, 31) 70%, rgb(63, 15, 43) 30%);   
+    background: -webkit-linear-gradient(left, rgb(41, 17, 31) 70%,rgb(63, 15, 43)30%);
+    background: -o-linear-gradient(left, rgb(41, 17, 31)70%,rgb(63, 15, 43) 30%);
+    background: -ms-linear-gradient(left, rgb(41, 17, 31) 70%,rgb(63, 15, 43) 30%);
     height: 250px;
     border-top: 1px solid rgba(144, 28, 75, 0.4);
     position: relative;
-    
-
 }
 
 footer a{
-   
     margin: 5px;
     margin-right: 30px;
     border: 1px solid rgb(144, 28, 75);
@@ -317,9 +302,6 @@ footer a{
     color: rgb(201, 116, 149);
     text-align: center;
     padding: 1px 1px;
-    
-
-
 }
 
 footer a:hover{
@@ -328,20 +310,17 @@ footer a:hover{
     text-shadow: none;
 }
 
-footer a:active{
-
-}
-
-footer ul{
+footer .footlinks{
     display: flex;
     width: 20%;
     justify-content: left;
+    margin: 20px
 }
 
 footer p{
     position: relative;
     color: white;
-    left: 90px;
+    left: 70px;
     margin-left: 10px;
     margin-bottom: 5px;
     margin-top: 0px;
@@ -349,8 +328,8 @@ footer p{
     width: 40%;
     text-shadow:1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
     font-variant: small-caps;
-    
 }
+/* Slut Footer */
 
 
 /* Specifika för - Om Oss */
@@ -374,7 +353,6 @@ footer p{
 
 .main .omoss .portrattbilder img{
     width: 100%;
-    
 }
 
 .main .omoss h3{
@@ -387,7 +365,6 @@ footer p{
     text-align: center;
 }
 
-
 .main .omoss #om-oss-text{
     width: 95%;
     margin-top: 40px;
@@ -398,6 +375,7 @@ footer p{
     font-size: 23px;
     font-variant: small-caps;
 }
+/* Slut om oss */
 
 
 /* Specifika för - Nyheter */
@@ -408,7 +386,6 @@ footer p{
     align-items: center;
     max-width: 100%;
     padding-top: 20px;
-    
 }
 
 .nyhetsbox{
@@ -439,6 +416,7 @@ footer p{
     position: relative;
     top: 5px;
 }
+/* Slut nyheter */
 
 
 /* Specifika för Jobba hos oss */
@@ -482,12 +460,12 @@ footer p{
 #formular #submitbutton{
     width: 20%;
 }
+/* Slut jobba hos oss */
+
 
 /* Specifika för Våra rättvisa bönor */
-
 .smallermain .bonor{
     display: block;
-
 }
 
 .smallermain .bonor p{
@@ -495,6 +473,7 @@ footer p{
    order: 2;
    width: 40%;
    padding: 10px;
+   margin-top: 70px;
    border: 13px solid rgba(90, 31, 31, 0.5);
    background-color: white;
 }
@@ -503,11 +482,12 @@ footer p{
     width: 55%;
     float: left;
     order: 1;
-    
+    margin-top: 70px;
 }
+/* Slut bönor */
+
 
 /* Specifika för Hitta oss*/
-
 .hittaoss a{
     width: 100%;
 }
@@ -516,9 +496,10 @@ footer p{
     width: 80%;
     border: 2px solid white ;
 }
+/* Slut hitta oss */
+
 
 /* Specifika för Meny */
-
 .main .meny{
     display: flex;
     flex-direction: row;
@@ -546,25 +527,15 @@ footer p{
 .main .meny #menybild2 img{
     width: 100%;
 }
+/* Slut meny */
+
 
 @media only screen and (max-width: 1325px){
 
     .main{
         height: 1300px;
-        
     }
-    
 
-
-}
-
-@media only screen and (max-width: 992px){
-
-    .main{
-        height: 1400px;
-        
-    }
-    
     .article div{
         height: 300px;
     }
@@ -586,15 +557,36 @@ footer p{
     }
 }
 
-@media only screen and (max-width: 895px){
+@media only screen and (max-width: 992px){
 
     .main{
-      
+        height: 1400px; 
     }
 
-    .menu a{
+    .article div{
+        height: 250px;
+    }
 
-    
+    .article div p{
+        bottom:20px;
+        margin-left: 8px;
+        margin-right: 8px;
+        overflow-wrap: break-word;
+    }
+
+    .article div .box-sizer{
+        border:none;
+        background-color: transparent;
+        visibility: hidden;
+        margin-top: 0px;
+        margin-left: 106px;
+        margin-right: 106px;
+    }
+}
+
+@media only screen and (max-width: 895px){
+
+    .menu a{
         display: block;
     }
     
@@ -605,7 +597,6 @@ footer p{
     .menu #lankar{
         display: none;
     }
-
 }
 
 
@@ -628,16 +619,12 @@ footer p{
         font-size: 13px;
     }
 
-    .main .article div p{
-        bottom:20px;
-        margin-left: 13px;
-        margin-right: 13px;
-        overflow-wrap: break-word;
+    .smallermain .article div{
+        height: auto;
     }
 
-    .main .article div a{
-        margin-top: ;
-      
+    .smallermain .article div a{
+        margin-top: 50px;
     }
 
     .article div .box-sizer{
@@ -703,13 +690,16 @@ footer p{
     .smallermain .bonor{
         display: flex;
         flex-direction: column;
-    
-        
-    
+    }
+
+    .smallermain  #bild-bonor{
+         margin-top: 20px;
+         margin-bottom: 10px;
     }
 
     .smallermain .bonor p{
         width: 70%;
+        margin-top: 10px;
     }
     
     .smallermain{
@@ -727,10 +717,7 @@ footer p{
     }
 
     .main .omoss{
-
         flex-direction: column;
-
-        
     }
 
     .main .omoss #om-oss-text{

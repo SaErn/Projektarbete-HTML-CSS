@@ -1,110 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Zen Garden: The Beauty of CSS Design</title>
+        <link rel="stylesheet" media="screen" href="styleprojekt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samir Ernez">
+        <meta name="description" content="Description here">
+        <meta name="robots" content="all">
+    </head>
 
-    <link rel="stylesheet" media="screen" href="styleprojekt.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <div class="wrapper">
+            <section class="head">
+                <div id="logo"></div>
+                <img src="https://img.favpng.com/4/9/3/coffee-cafe-logo-png-favpng-cQpm34YCF9xPuMMNYxHK4VCyA.jpg" width="140" height="140" alt="Company logo">
+                <header>
+                    <h1>Purple Coffee Café</h1>
+                    <q>Success is a journey not a destination.</q>
+                </header>
+            </section>   
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Samir Ernez">
-	<meta name="description" content="Description here">
-	<meta name="robots" content="all">
-
-</head>
-
-<body>
-    <div class="wrapper">
-
-        <section class="head">
-            <div id="logo"></div>
-            <img src="https://img.favpng.com/4/9/3/coffee-cafe-logo-png-favpng-cQpm34YCF9xPuMMNYxHK4VCyA.jpg" width="140px" height="140px">
-            <header role="banner">
-                
-                <h1>Purple Coffee Café</h1>
-                <q>Success is a journey not a destination.</q>
-            </header>
-
-          
-
-        </section>       
-        <div class="menu">
-            
-            <a href="jobba.html" class="active">Jobba hos oss</a>
-
-            <div id="lankar">
-                <a href="Index.html">Start</a>
-                <a href="om-oss.html">Om oss</a>
-                <a href="nyheter.html">Nyheter</a>
-                <a href="vara-bonor.html">Våra ekologiska bönor</a> 
-                <a href="meny.html">Vår meny</a> 
-                <a href="hitta-oss.html">Var hittar du oss</a> 			
+            <div class="menu">
+                <a href="jobba.html" class="active">Jobba hos oss</a>
+                <div id="lankar">
+                    <a href="Index.html">Start</a>
+                    <a href="om-oss.html">Om oss</a>
+                    <a href="nyheter.html">Nyheter</a>
+                    <a href="vara-bonor.html">Våra ekologiska bönor</a> 
+                    <a href="meny.html">Vår meny</a> 
+                    <a href="hitta-oss.html">Var hittar du oss</a> 			
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+
+            <div class="main">
+                <div class="jobba">
+                    <form id="formular" method="POST" action=”mailto:samirernez1@gmail.com”>
+                        Förnamn:<br />    <input name="surname" type="text"/> <br />  
+                        Efternamn:<br />    <input name="lastname" type="text" /> <br /> 
+                        Email:<br />    <input name="mail" type="text" /> <br /> 
+                        Ålder:<br />  <input id="agecounter" max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+                        Kön:<br /> 
+                        <select name="gender">
+                            <option selected="selected" value="male">Man</option>
+                            <option value="female">Kvinna</option>
+                            <option value="other">Annat</option>
+                        </select><br />
+                        Stad du vill jobba i: <br>
+                        Stockholm <input class="radioB" checked="checked" name="city" type="radio" value="sthlm" /> 
+                        Göteborg <input class="radioB" name="city" type="radio" value="gtb" /> 
+                        Malmö <input class="radioB" name="city" type="radio" value="mlm" /> <br />
+                        <textarea  name="comments">Beskriv dig själv och varför just du passar för att jobba hos oss här!</textarea><br />
+                        <label><input id="termsbutton" name="terms" type="checkbox" value="tandc" required/>Accept terms</label> <br /><br />
+                        <input id="submitbutton" type="submit" value="Send"/>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footlinks">
+                    <a class="icons-foot" href="http://twitter.com" title="Twitter">
+                        <img src="twitter.png" alt="Twitter logo link">
+                    </a>
+                    <a class="icons-foot" href="http://facebook.com" title="Facebook">
+                        <img src="fb.png" alt="Facebook logo link">
+                    </a>
+                    <a class="icons-foot" href="http://instagram.com" title="Instagram">
+                        <img src="insta.png" alt="Instagram logo link">
+                    </a>
+                </div>
+                <p>Företag AB</p>
+                <p>Företagsgatan 21</p>
+                <p>352 44, Växjö</p>
+                <p>Öppettider: Mån-Fre 12-20, Lör-Sön 12-18</p>
+            </footer>
         </div>
 
-        <div class="main">
-
-            <div class="jobba">
-                <form id="formular" 
-                        method="POST"
-                        action=”mailto:samirernez1@gmail.com”
-                        enctype=”text/plain”
-                        >
-                    Förnamn:<br />    <input name="surname" type="text" /> <br />  
-                    Efternamn:<br />    <input name="lastname" type="text" /> <br /> 
-                    Email:<br />    <input name="mail" type="text" /> <br /> 
-                    Ålder:<br />  <input id="agecounter" max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
-                    Kön:<br /> 
-                    <select name="gender">
-                        <option selected="selected" value="male">Man</option>
-                        <option value="female">Kvinna</option>
-                        <option value="other">Annat</option>
-                    </select><br />
-                    Stad du vill jobba i: <br>
-                    Stockholm <input class="radioB" checked="checked" name="city" type="radio" value="sthlm" /> 
-                    Göteborg <input class="radioB" name="city" type="radio" value="gtb" /> 
-                    Malmö <input class="radioB" name="city" type="radio" value="mlm" /> <br />
-                    <textarea  name="comments">Beskriv dig själv och varför just du passar för att jobba hos oss här!</textarea><br />
-                    <label><input id="termsbutton" name="terms" type="checkbox" value="tandc" />Accept terms</label> <br /><br />
-                    <input id="submitbutton" type="submit" value="Send"/>
-                </form>
-                
-            </div>
-          
-        </div>
-        <footer>
-            <ul>
-              <a class="icons-foot" href="http://twitter.com" title="Twitter">
-                  <img src="twitter.png">
-              </a>
-              <a class="icons-foot" href="http://facebook.com" title="Facebook">
-                  <img src="fb.png">
-              </a>
-              <a class="icons-foot" href="http://instagram.com" title="Instagram">
-                  <img src="insta.png">
-              </a>
-             </ul>
-              <p>Företag AB</p>
-              <p>Företagsgatan 21</p>
-              <p>352 44, Växjö</p>
-              <p>Öppettider: Mån-Fre 12-20, Lör-Sön 12-18</p>
-              
-          </footer>
-    </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("lankar");
-            if (x.style.display === "block") {
-            x.style.display = "none";
-            } else {
-            x.style.display = "block";
-            }
-        } 
-    
-    </script>
-</body>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("lankar");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            } 
+        </script>
+    </body>
+</html>
